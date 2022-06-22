@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Test               Project</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+  <!-- Custom CSS-->
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <script src="{% static 'js/jquery.min.js' %}"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h>My Test Project</h>
+        </div>
+
+
+        {% block content %}<!-- default content text (typically empty) -->{% endblock %}
+
+
+
+        <div class="footer">
+            <strong>Copyright &copy; 2021 Hanish.</strong> All rights
+    reserved.
+        </div>
+    </div>
+</body>
+</html>
